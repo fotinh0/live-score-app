@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Home, LeagueView, TeamView } from "./pages";
+import { Home, LeagueView, MatchView, TeamView } from "./pages";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/league" element={<LeagueView />} />
           <Route path="/team" element={<TeamView />} />
+          <Route path="/match" element={<MatchView />} />
         </Routes>
       </main>
     </BrowserRouter>
